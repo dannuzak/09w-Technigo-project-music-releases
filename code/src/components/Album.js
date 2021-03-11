@@ -1,18 +1,21 @@
 import React from 'react'
-/* import data from './data.json' */
+
 
 export const Album = (props) => {
-console.log(props)
+console.log(props.artists[0].name)
   return (
     <>
+     <div className="main-container">
       <div className="album-container">
-        <img src="{props.images[0].url}" alt="Album cover"/>
-        <h3>{props.name}</h3>
-        <h3>{props.artists[0].name}</h3>
+        <img className="album-cover" src="https://via.placeholder.com/150" alt="Album cover"/>
+        <h3 className="album-name">{props.name}</h3>
+        <h3 className="album-artist"> {props.artists[0].name}</h3>
       </div>
+     </div>  
     </>
   );
 };
 
 export default Album;
 
+// props.images[0].url
