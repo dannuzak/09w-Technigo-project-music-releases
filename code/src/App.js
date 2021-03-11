@@ -9,20 +9,21 @@ const albums = data.albums.items;
 export const App = () => {
   return (
     <>
-        <Header  /> 
-        <div>
-          {albums.map(album => {
-          return (
-            <Album 
-              key={album.id} 
-              image={album.images[0].url}
-              name={album.name}
-              artists={album.artists}
-            />
-          )
-          
-          })}
-        </div>
+      <Header  /> 
+        <div className="albums-container">
+          <div>
+            {albums.map(album => {
+              return (
+                <Album  
+                  key={album.id} 
+                  image={album.images[0].url}
+                  name={album.name}
+                  artists={album.artists}
+                />
+              )
+            })}
+          </div>
+        </div> 
     </>
   )
 }
