@@ -26,15 +26,13 @@ body {
 
 .album-card {
   width: 100%;
-  height: 360px;
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
 
 .album-cover {
-  /* height: 300px;
-  width: 100%; */
+  width: 100%;
   position: relative;
 }
 
@@ -57,6 +55,17 @@ body {
   filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(204deg)
     brightness(110%) contrast(101%);
   width: 60px;
+}
+
+.play {
+  transition: 0.5s ease-in-out;
+}
+
+.play:hover {
+  transform: scale(1.3);
+  filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(204deg)
+    brightness(110%) contrast(101%);
+  opacity: 50%;
 }
 
 .album-name {
@@ -86,12 +95,16 @@ a {
   color: inherit;
 }
 
-.cover:hover {
-  opacity: 15%;
-  background: linear-gradient (rgba(32, 32, 159, 0.5), rgba(72, 80, 118, 0.5));
+.cover {
+  transition: 0.2s ease-in-out;
 }
 
-@media all and (min-width: 600px) {
+.cover:hover {
+  opacity: 15%;
+  /* background: linear-gradient (rgba(32, 32, 159, 0.5), rgba(72, 80, 118, 0.5)); */
+}
+
+@media all and (min-width: 768px) {
   .albums-container {
     display: flex;
     width: 100%;
@@ -103,22 +116,21 @@ a {
 
   .album-card {
     width: 40%;
-    max-width: 45%;
     margin: 30px;
   }
 }
 
 @media all and (min-width: 1024px) {
   .album-card {
-    width: 22%;
-    max-width: 24%;
-    margin: 0;
+    width: 20%;
+    margin: 15px;
   }
 
   .icon-container {
     width: 130px;
   }
+
   .icon {
-    width: 30px;
+    width: 50px;
   }
 }

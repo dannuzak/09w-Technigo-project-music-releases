@@ -15,7 +15,7 @@ console.log(props)
             <img className="icon dots" src="/icons/dots.svg" alt="dots icon"/> 
           </div>  
           <a href={props.urlAlbum} target= "_blank" rel="noopener noreferrer">
-            <img className="cover" src={props.image} alt="Album cover"/>
+            <img className="cover" src={props.image} alt={props.name}/>
           </a>
           
         </div>
