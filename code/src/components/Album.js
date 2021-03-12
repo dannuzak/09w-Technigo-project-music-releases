@@ -1,4 +1,5 @@
 import React from 'react'
+/* import svg from '../public/icons/heart.svg' */
 
 
 export const Album = (props) => {
@@ -6,27 +7,29 @@ export const Album = (props) => {
 console.log(props)
   return (
     <>
-     
       <div className="album-card">
-        <a 
-          href={props.urlAlbum} 
-          target= "_blank" 
-          rel="noopener noreferrer"
-        >
-          <img className="album-cover" src={props.image} alt="Album cover"/>
-        </a>
-        <div className="album-text">
-          <h2 className="album-name">{props.name}</h2>
-          <a 
-            href={props.urlArtist}
-            target= "_blank" 
-            rel="noopener noreferrer"
-          >
-            <h3 className="album-artist">{props.artists}</h3>
-          </a> 
+        <div className = "album-cover">
+          <div className="icon-container"> 
+            <img className="icon heart" src="/icons/heart.svg" alt="heart icon"/>
+            <img className="icon play" src="/icons/play.svg" alt="play button icon"/> 
+            <img className="icon dots" src="/icons/dots.svg" alt="dots icon"/> 
+          </div>  
+          <a href={props.urlAlbum} target= "_blank" rel="noopener noreferrer">
+            <img className="cover" src={props.image} alt="Album cover"/>
+          </a>
+          
         </div>
-      </div>
-     
+        <div>
+        <a href={props.urlAlbum} target= "_blank" rel="noopener noreferrer">  
+          <h2 className="album-name">{props.name}</h2>
+        </a>  
+        </div>
+        <div className="album-artist">
+          <a href={props.urlArtist} target= "_blank" rel="noopener noreferrer"> 
+           <h2>{props.artists}</h2>
+          </a> 
+        </div>   
+      </div> 
     </>
   );
 };
