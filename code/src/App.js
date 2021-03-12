@@ -11,7 +11,7 @@ export const App = () => {
     <>
       <Header  /> 
         <div className="albums-container">
-          <div>
+          
             {albums.map(album => {
               return (
                 <Album  
@@ -24,7 +24,7 @@ export const App = () => {
                 />
               )
             })}
-          </div>
+          
         </div> 
     </>
   )
