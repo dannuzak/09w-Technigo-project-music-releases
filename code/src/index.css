@@ -80,16 +80,6 @@ code {
   brightness(110%) contrast(101%); */
 }
 
-/*This (82-89) was making the heart big too*/
-/* .heart {
-  transition: 0.5s ease-in-out;
-  width: 30px;
-}
-
-.heart:hover {
-  width: 30px;
-} */
-
 .dots {
   width: 30px;
 }
@@ -118,7 +108,7 @@ code {
 
 .album-artist {
   margin-top: 5px;
-  font-size: 10px; /* the link increase the size of the font */
+  font-size: 10px;
   color: #a0a0a0;
   display: flex;
   flex-direction: row;
@@ -147,10 +137,6 @@ a {
   transition: 0.2s ease-in-out;
 }
 
-/* .cover:hover {
-  opacity: 15%; */
-/* background: linear-gradient (rgba(32, 32, 159, 0.5), rgba(72, 80, 118, 0.5)); */
-
 @media all and (min-width: 768px) {
   .albums-container {
     display: flex;
@@ -175,7 +161,6 @@ a {
 
   .icon-container {
     width: 160px;
-    /* justify-content: space-around; */
   }
 
   .play {
