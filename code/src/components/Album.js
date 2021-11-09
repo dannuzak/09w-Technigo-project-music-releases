@@ -7,7 +7,9 @@ export const Album = (props) => {
       <div className="album-card">
         <div className="album-card__inner">
           <div className = "album-cover">
-            <a href={props.urlAlbum} target= "_blank" rel="noopener noreferrer">
+            <a href={props.urlAlbum} 
+               target= "_blank" 
+               rel="noopener noreferrer">
                 <img className="cover" src={props.image} alt={props.name}/>
             </a>
           </div>
